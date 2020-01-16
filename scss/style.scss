@@ -1,0 +1,23 @@
+@import "_variables.scss";
+
+$primary: #ffffff;
+$secondary: #113b1f;
+$tertiary: #991f0f;
+
+
+html{
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    background-color: $secondary;
+}
+
+.whole{
+    height: 100rem;
+    position: relative;   
+}
