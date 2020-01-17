@@ -1,7 +1,7 @@
 @import "_variables.scss";
 
 $primary: #ffffff;
-$secondary: #113b1f;
+$secondary: #071d0e;
 $tertiary: #991f0f;
 
 
@@ -13,11 +13,20 @@ html{
 }
 
 body{
-    height: 100%;
     background-color: $secondary;
+    height: 100%;
 }
 
 .whole{
-    height: 100rem;
-    position: relative;   
+    height: 100vh;
+    position: relative;
+}
+
+.title{
+    background-image: linear-gradient(
+        rgba(color($tertiary), 0.5)
+        ),
+        url(dist/img/mosque.jpg);  
+    background-position: top;
+    background-size: cover; 
 }
