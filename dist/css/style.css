@@ -7,16 +7,29 @@ html {
 }
 
 body {
-  background-color: #071d0e;
+  background-color: #0a3a14;
   height: 100%;
 }
 
 .whole {
-  height: 100vh;
+  height: 400vh;
   position: relative;
 }
 
 .title {
-  background-image: url(dist/img/mosque.jpg);
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 56, 23, 0.5))), url(dist/img/mosque.jpg);
+  background-image: linear-gradient(rgba(8, 56, 23, 0.5)), url(dist/img/mosque.jpg);
+  background-position: top;
+  background-size: cover;
+}
+
+.main_title {
+  height: 5rem;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  text-align: center;
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
