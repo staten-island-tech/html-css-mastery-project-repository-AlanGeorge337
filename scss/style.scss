@@ -13,7 +13,7 @@ html{
 }
 
 body{
-    background-color: #0a3a14;
+    background-color: $tertiary;
     height: 100%;
 }
 
@@ -25,18 +25,21 @@ body{
 .title{
     height: 100vh;
     background-image: linear-gradient(
-        rgba(color(secondary), 0.5)
-        ),
-        url(dist/img/mosque.jpg);  
+        to right bottom,
+        $secondary,
+        $primary,
+    ),
+    url(img/mosque.jpg); 
     background-position: top;
     background-size: cover;
 }
 
 .main_title{
-    height: 5rem;
+    height: 10rem;
     position: absolute;
     top: 0%;
     left: 50%;
     text-align: center;
     color: $primary;
+    font-size: 10rem;
 }
