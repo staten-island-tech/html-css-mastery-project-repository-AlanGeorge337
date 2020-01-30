@@ -1,10 +1,10 @@
-$colors:(
+$colors: (
   primary: #ffffff,
   secondary: #083817,
-  tertiary: #000000,
+  tertiary: #000000
 );
 
-  $tablet: 600px;
+  $tablet: 300px;
   $laptop: 900px;
   $desktop: 1100px;
 
@@ -15,13 +15,15 @@ $colors:(
 
 
 @mixin tablet {
-@media (min-width: #{$tablet}){
+@media (min-width: #{$tablet}),
+(max-width: #{600px}){
   @content; 
 }
 }
 
 @mixin laptop {
-@media (min-width: #{$laptop}){
+@media (min-width: #{$laptop}),
+(max-width: #{1000px}){
   @content; 
 }
 }

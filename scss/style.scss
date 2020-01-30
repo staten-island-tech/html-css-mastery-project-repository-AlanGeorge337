@@ -26,20 +26,25 @@ body{
     height: 100vh;
     background-image: linear-gradient(
         to right bottom,
-        $secondary,
-        $primary,
+        rgba(color(secondary), 0.5),
+        rgba(color(primary), 0.5)
     ),
-    url(img/mosque.jpg); 
+    url(../../img/mosque.jpg); 
     background-position: top;
     background-size: cover;
 }
 
 .main_title{
+    display: flex;
     height: 10rem;
     position: absolute;
     top: 0%;
-    left: 50%;
+    left: 37%;
     text-align: center;
     color: $primary;
     font-size: 10rem;
+    @include tablet {
+        top: 4%;
+        left: 2%;
+    }
 }
