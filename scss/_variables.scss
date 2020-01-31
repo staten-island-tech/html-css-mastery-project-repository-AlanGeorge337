@@ -4,7 +4,7 @@ $colors: (
   tertiary: #000000
 );
 
-  $tablet: 300px;
+  $tablet: 600px;
   $laptop: 900px;
   $desktop: 1100px;
 
@@ -15,15 +15,13 @@ $colors: (
 
 
 @mixin tablet {
-@media (min-width: #{$tablet}),
-(max-width: #{600px}){
+@media (min-width: #{$tablet}){
   @content; 
 }
 }
 
 @mixin laptop {
-@media (min-width: #{$laptop}),
-(max-width: #{1000px}){
+@media (min-width: #{$laptop}){
   @content; 
 }
 }
