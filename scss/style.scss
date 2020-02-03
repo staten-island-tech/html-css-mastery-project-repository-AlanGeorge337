@@ -1,7 +1,7 @@
 @import "_variables.scss";
 
 $primary: #ffffff;
-$secondary: #13a140;
+$secondary: #1e793a;
 $tertiary: #000000;
 
 
@@ -41,16 +41,28 @@ body{
     height: 50rem;
     color: $primary;
     align-items: center;
-    font-size: 5rem;
     flex-direction: column;
 }
 
 .main_title_1{
-    height: 5rem;
+    height: 6rem;
+    font-size: 14rem;
+    @include tablet{
+        height: 8rem;
+        font-size: 5rem;
+    }
+    @include laptop{
+        height: 4rem;
+        font-size: 7rem;
+    }
 }
+
 .sub_title{
     display: flex;
     color: $primary;
     align-items: center;
-    font-size: 3rem;
+    font-size: 2rem;
+    @include laptop{
+        font-size: 3rem;
+    }
 }
