@@ -45,24 +45,34 @@ body{
 }
 
 .main_title_1{
-    height: 6rem;
-    font-size: 14rem;
+    height: 4rem;
+    font-size: 9rem;
+    @include phone{
+        height: 7rem;
+        font-size: 4rem;
+    }
     @include tablet{
-        height: 8rem;
-        font-size: 5rem;
+        height: 7rem;
+        font-size: 4rem;
     }
-    @include laptop{
-        height: 4rem;
+    /*@include laptop{
+        height: 7rem;
         font-size: 7rem;
-    }
+    }*/
 }
 
 .sub_title{
     display: flex;
     color: $primary;
     align-items: center;
-    font-size: 2rem;
-    @include laptop{
-        font-size: 3rem;
+    font-size: 3rem;
+    @include phone{
+        font-size: 2rem;
     }
+    @include tablet{
+        font-size: 2.5rem;
+    }
+    /*@include laptop{
+        font-size: 1.5rem;
+    }*/
 }
