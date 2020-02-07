@@ -93,20 +93,25 @@ body{
     
 }
 
+/*resize images into 200 x 400*/
+
 #rotating_one{
     background-color: $seconday_light;
-    max-height: 100vh;
-    width: 35vh;
+    object-fit: cover;
+    max-height: 80vh;
+    width: 45vh;
 }
 
 #rotating_two{
     background-color: $seconday_light;
-    max-height: 100vh;
-    width: 35vh; 
+    object-fit: cover;
+    max-height: 80vh;
+    width: 45vh; 
 }
 
 #rotating_three{
     background-color: $seconday_light;
-    max-height: 100vh;
-    width: 35vh; 
+    object-fit: cover;
+    max-height: 80vh;
+    width: 45vh; 
 }

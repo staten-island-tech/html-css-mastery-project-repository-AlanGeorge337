@@ -119,21 +119,28 @@ body {
           justify-content: space-evenly;
 }
 
+/*resize images into 200 x 400*/
 #rotating_one {
   background-color: #9beba5;
-  max-height: 100vh;
-  width: 35vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 80vh;
+  width: 45vh;
 }
 
 #rotating_two {
   background-color: #9beba5;
-  max-height: 100vh;
-  width: 35vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 80vh;
+  width: 45vh;
 }
 
 #rotating_three {
   background-color: #9beba5;
-  max-height: 100vh;
-  width: 35vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 80vh;
+  width: 45vh;
 }
 /*# sourceMappingURL=style.css.map */
