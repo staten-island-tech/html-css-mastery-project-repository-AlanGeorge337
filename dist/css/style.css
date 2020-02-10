@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #1e793a;
   height: 100%;
   position: relative;
 }
@@ -31,8 +31,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
-          clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  -webkit-clip-path: polygon(0 10%, 10% 10%, 10% 0, 90% 0, 90% 10%, 100% 10%, 100% 90%, 90% 90%, 90% 100%, 10% 100%, 10% 90%, 0 90%);
+          clip-path: polygon(0 10%, 10% 10%, 10% 0, 90% 0, 90% 10%, 100% 10%, 100% 90%, 90% 90%, 90% 100%, 10% 100%, 10% 90%, 0 90%);
 }
 
 .main_title {
@@ -115,8 +115,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
+  background-color: #ffffff;
   background-position: top;
-  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-height: 100vh;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -136,6 +139,24 @@ body {
   }
 }
 
+@media (min-width: 600px) {
+  .general {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 1100px) {
+  .general {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 /*resize images into 200 x 400*/
 #rotating_one {
   background-image: url(../../img/archway.jpg);
@@ -145,6 +166,20 @@ body {
 }
 
 @media (min-width: 400px) {
+  #rotating_one {
+    height: 20rem;
+    width: 36rem;
+  }
+}
+
+@media (min-width: 600px) {
+  #rotating_one {
+    height: 30rem;
+    width: 75rem;
+  }
+}
+
+@media (min-width: 1100px) {
   #rotating_one {
     height: 70rem;
     width: 40rem;
@@ -160,6 +195,20 @@ body {
 
 @media (min-width: 400px) {
   #rotating_two {
+    height: 20rem;
+    width: 36rem;
+  }
+}
+
+@media (min-width: 600px) {
+  #rotating_two {
+    height: 30rem;
+    width: 75rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  #rotating_two {
     height: 70rem;
     width: 40rem;
   }
@@ -173,6 +222,20 @@ body {
 }
 
 @media (min-width: 400px) {
+  #rotating_three {
+    height: 20rem;
+    width: 36rem;
+  }
+}
+
+@media (min-width: 600px) {
+  #rotating_three {
+    height: 30rem;
+    width: 75rem;
+  }
+}
+
+@media (min-width: 1100px) {
   #rotating_three {
     height: 70rem;
     width: 40rem;
