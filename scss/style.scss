@@ -16,7 +16,7 @@ html{
 }
 
 body{
-    background-color: $secondary;
+    background-color: $secondary-light;
     height: 100%;
     position: relative;
 }
@@ -29,13 +29,17 @@ body{
         rgba(color(secondary), 0.5),
         rgba(color(primary), 0.5)
     ),
-    url(../../img/mosque.jpg); 
+    url(../../img/mosque.jpg);
+    border-radius: 5rem; 
     background-position: top;
     background-size: cover;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    clip-path: polygon(0 10%, 10% 10%, 10% 0, 90% 0, 90% 10%, 100% 10%, 100% 90%, 90% 90%, 90% 100%, 10% 100%, 10% 90%, 0 90%);
+    @include phone{
+        border-radius: 10rem;
+    }
+    /*clip-path: polygon(0 10%, 10% 10%, 10% 0, 90% 0, 90% 10%, 100% 10%, 100% 90%, 90% 90%, 90% 100%, 10% 100%, 10% 90%, 0 90%);*/
     
 }
 
@@ -89,26 +93,29 @@ body{
 }
 
 .general{
-    background-color: $secondary-light;
+    background-color: $secondary;
+    border-radius: 5rem;
+    @include phone{
+        border-radius: 10rem;
+    }
 }
 
 .general_title{
     display: flex;
-    height: 2rem;
+    height: 1rem;
     text-align: center;
     justify-content: center;
-    
 }
 
 .second_title{
     display: flex;
     height: 10rem;
-    font-size: 6rem;
+    font-size: 4rem;
     color: $primary;
     text-align: center;
     justify-content: center;
     @include phone{
-        font-size: 4rem;        
+        font-size: 6rem;        
     }
     @include tablet{
         font-size: 6rem;
@@ -141,17 +148,17 @@ body{
 /*resize images into 200 x 400*/
 
 #rotating_one{
-    background-image: url(../../img/archway.jpg);
+    background-image: url(../../img/ashgabat-palace.jpg);
     background-size: cover;
-    height: 20rem;
-    width: 36rem;
+    height: 15rem;
+    width: 33rem;
     @include phone{
-        height: 20rem;
-        width: 36rem;
+        height: 15rem;
+        width: 33rem;
     }
     @include tablet{
-        height: 25rem;
-        width: 75rem;
+        height: 20rem;
+        width: 70rem;
     }
     @include desktop{
         height: 70rem;
@@ -162,15 +169,15 @@ body{
 #rotating_two{
     background-image: url(../../img/turkskyline.jpg);
     background-size: cover;
-    height: 20rem;
-    width: 36rem;
+    height: 15rem;
+    width: 33rem;
     @include phone{
-        height: 20rem;
-        width: 36rem;
+        height: 15rem;
+        width: 33rem;
     }
     @include tablet{
-        height: 25rem;
-        width: 75rem;
+        height: 20rem;
+        width: 70rem;
     }
     @include desktop{
         height: 70rem;
@@ -181,15 +188,15 @@ body{
 #rotating_three{
     background-image: url(../../img/doortohell.jpg);
     background-size: cover;
-    height: 20rem;
-    width: 36rem;
+    height: 15rem;
+    width: 33rem;
     @include phone{
-        height: 20rem;
-        width: 36rem;
+        height: 15rem;
+        width: 33rem;
     }
     @include tablet{
-        height: 25rem;
-        width: 75rem;
+        height: 20rem;
+        width: 70rem;
     }
     @include desktop{
         height: 70rem;
