@@ -95,6 +95,7 @@ body{
 .1st_block{
     background-color: $secondary;
     
+    display: flex;
 }
 
 .sub_title_1{
@@ -124,6 +125,8 @@ body{
 
 .landmarks{
     display: flex;
+    background-color: $secondary;
+    border-radius: 5rem;
     height: 85vh;
     background-color: $secondary;
     background-position: top;
@@ -138,6 +141,7 @@ body{
     @include tablet{
         flex-direction: column;
         height: 90vh;
+        border-radius: 10rem;
     }
     @include desktop{
         flex-direction: row;
@@ -211,12 +215,21 @@ body{
 .holder2{
     display: flex;
     height: 85vh;
+    display: flex;
+}
+
+.holder2{
     background-color: $secondary;
     flex-direction: row;
     align-items: center;
     border-radius: 5rem;
     height: 85vh;
     justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 85vh;
     @include phone{
         border-radius: 10rem;
     }
@@ -244,4 +257,83 @@ body{
     height: 10rem;
     width: 10rem;
     background-color: $secondary-light;
+    perspective: 150rem;
+    position: relative;
+    height: 60rem;
+    width: 40rem;
+}
+
+.hotels{
+    perspective: 150rem;
+    position: relative;
+    height: 60rem;
+    width: 40rem;
+}
+
+.card-side{
+    display: flex;
+    height: 60rem;
+    width: 40rem;
+    font-size: 2rem;
+    background-color: $secondary-light;
+    backface-visibility: hidden;
+}
+
+.card-side-front-1{
+    display: flex;
+    background-color: $secondary-light;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    transition: all 1s;
+}
+
+.captions{
+    color: $primary;
+    
+}
+
+.card-side-back-1{
+    display: flex;
+    position: absolute;
+    z-index: 0;
+    transform: rotateY(-180deg);
+    transition: all 1s;
+    background-image: url(../../img/ashgabat_map.PNG);
+    background-size: cover;
+
+}
+
+.card-side-front-2{
+    display: flex;
+    background-color: $secondary-light;
+    position: absolute;
+    z-index: 1;
+    transition: all 1s;
+    text-align: center;
+}
+
+.card-side-back-2{
+    display: flex;
+    position: absolute;
+    z-index: 0;
+    transform: rotateY(-180deg);
+    transition: all 1s;
+    background-image: url(../../img/ashgabat_hotels.PNG);
+}
+
+.directions:hover .card-side-front-1{
+    transform: rotateY(-180deg);
+}
+
+.directions:hover .card-side-back-1{
+    transform: rotateY(0deg);
+}
+
+.hotels:hover .card-side-front-2{
+    transform: rotateY(-180deg);
+}
+
+.hotels:hover .card-side-back-2{
+    transform: rotateY(0deg);
 }
