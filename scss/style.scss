@@ -219,19 +219,23 @@ body{
     height: 85vh;
     justify-content: space-around;
     display: flex;
+    flex-direction: column;
     @include phone{
         border-radius: 10rem;
         flex-direction: column;
+        justify-content: space-around;
     }
 
     @include tablet{
         border-radius: 10rem;
         flex-direction: column;
+        justify-content: space-around;
     }
 
     @include desktop{
         border-radius: 5rem;
         flex-direction: row;
+        justify-content: space-around;
     }
 }
 
@@ -239,24 +243,53 @@ body{
     display: flex;
     position: relative;
     perspective: 150rem;
-    height: 60rem;
-    width: 40rem;
+    height: 15rem;
+    width: 30rem;
+    @include tablet{
+        height: 40rem;
+        width: 30rem;
+    }
+    @include desktop{
+        height: 60rem;
+        width: 40rem;
+    }
 }
 
 .hotels{
+    display: flex;
     perspective: 150rem;
     position: relative;
-    height: 60rem;
-    width: 40rem;
+    height: 13rem;
+    width: 30rem;
+    @include tablet{
+        height: 40rem;
+        width: 30rem;
+    }
+    @include desktop{
+        height: 60rem;
+        width: 40rem;
+    }
 }
 
 .card-side{
     display: flex;
-    height: 60rem;
-    width: 40rem;
-    font-size: 2rem;
     background-color: $secondary-light;
     backface-visibility: hidden;
+    @include phone{
+        height: 30rem;
+        width: 30rem;
+        font-size: .75rem;
+    }
+    @include tablet{
+        height: 40rem;
+        width: 30rem;
+        font-size: 1.5rem;
+    }
+    @include desktop{
+        height: 60rem;
+        width: 40rem;
+        font-size: 2rem;
+    }
 }
 
 .card-side-front-1{

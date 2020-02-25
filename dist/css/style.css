@@ -321,6 +321,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (min-width: 400px) {
@@ -330,6 +334,8 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -340,6 +346,8 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -350,6 +358,8 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -360,28 +370,80 @@ body {
   position: relative;
   -webkit-perspective: 150rem;
           perspective: 150rem;
-  height: 60rem;
-  width: 40rem;
+  height: 15rem;
+  width: 30rem;
+}
+
+@media (min-width: 600px) {
+  .directions {
+    height: 40rem;
+    width: 30rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .directions {
+    height: 60rem;
+    width: 40rem;
+  }
 }
 
 .hotels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-perspective: 150rem;
           perspective: 150rem;
   position: relative;
-  height: 60rem;
-  width: 40rem;
+  height: 13rem;
+  width: 30rem;
+}
+
+@media (min-width: 600px) {
+  .hotels {
+    height: 40rem;
+    width: 30rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .hotels {
+    height: 60rem;
+    width: 40rem;
+  }
 }
 
 .card-side {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 60rem;
-  width: 40rem;
-  font-size: 2rem;
   background-color: #9beba5;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+}
+
+@media (min-width: 400px) {
+  .card-side {
+    height: 30rem;
+    width: 30rem;
+    font-size: .75rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .card-side {
+    height: 40rem;
+    width: 30rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .card-side {
+    height: 60rem;
+    width: 40rem;
+    font-size: 2rem;
+  }
 }
 
 .card-side-front-1 {
