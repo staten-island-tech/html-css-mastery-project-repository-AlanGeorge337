@@ -252,19 +252,20 @@ body{
     transition: all 1s;
 }
 
-.direct_caption{
+.captions{
     color: $primary;
     
 }
 
 .card-side-back-1{
     display: flex;
-    background-color: $primary;
     position: absolute;
-
     z-index: 0;
     transform: rotateY(-180deg);
     transition: all 1s;
+    background-image: url(../../img/ashgabat_map.PNG);
+    background-size: cover;
+
 }
 
 .card-side-front-2{
@@ -273,15 +274,16 @@ body{
     position: absolute;
     z-index: 1;
     transition: all 1s;
+    text-align: center;
 }
 
 .card-side-back-2{
     display: flex;
-    background-color: $primary;
     position: absolute;
     z-index: 0;
     transform: rotateY(-180deg);
     transition: all 1s;
+    background-image: url(../../img/ashgabat_hotels.PNG);
 }
 
 .directions:hover .card-side-front-1{
