@@ -93,11 +93,7 @@ body{
 }
 
 .1st_block{
-    background-color: $secondary;
-    border-radius: 5rem;
-    @include phone{
-        border-radius: 10rem;
-    }
+    display: flex;
 }
 
 .sub_title_1{
@@ -127,6 +123,8 @@ body{
 
 .landmarks{
     display: flex;
+    background-color: $secondary;
+    border-radius: 5rem;
     height: 85vh;
     background-position: top;
     align-items: center;
@@ -138,6 +136,7 @@ body{
     @include tablet{
         flex-direction: column;
         height: 90vh;
+        border-radius: 10rem;
     }
     @include desktop{
         flex-direction: row;
@@ -204,10 +203,99 @@ body{
     }
 }
 
-/*.2nd_block{
+.2nd_block{
+    display: flex;
+}
+
+.holder2{
     background-color: $secondary;
     border-radius: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 85vh;
     @include phone{
         border-radius: 10rem;
     }
-}*/
+}
+
+.directions{
+    perspective: 150rem;
+    position: relative;
+    height: 60rem;
+    width: 40rem;
+}
+
+.hotels{
+    perspective: 150rem;
+    position: relative;
+    height: 60rem;
+    width: 40rem;
+}
+
+.card-side{
+    display: flex;
+    height: 60rem;
+    width: 40rem;
+    font-size: 2rem;
+    background-color: $secondary-light;
+    backface-visibility: hidden;
+}
+
+.card-side-front-1{
+    display: flex;
+    background-color: $secondary-light;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    transition: all 1s;
+}
+
+.direct_caption{
+    color: $primary;
+    
+}
+
+.card-side-back-1{
+    display: flex;
+    background-color: $primary;
+    position: absolute;
+
+    z-index: 0;
+    transform: rotateY(-180deg);
+    transition: all 1s;
+}
+
+.card-side-front-2{
+    display: flex;
+    background-color: $secondary-light;
+    position: absolute;
+    z-index: 1;
+    transition: all 1s;
+}
+
+.card-side-back-2{
+    display: flex;
+    background-color: $primary;
+    position: absolute;
+    z-index: 0;
+    transform: rotateY(-180deg);
+    transition: all 1s;
+}
+
+.directions:hover .card-side-front-1{
+    transform: rotateY(-180deg);
+}
+
+.directions:hover .card-side-back-1{
+    transform: rotateY(0deg);
+}
+
+.hotels:hover .card-side-front-2{
+    transform: rotateY(-180deg);
+}
+
+.hotels:hover .card-side-back-2{
+    transform: rotateY(0deg);
+}
