@@ -94,10 +94,7 @@ body{
 
 .1st_block{
     background-color: $secondary;
-    border-radius: 5rem;
-    @include phone{
-        border-radius: 10rem;
-    }
+    
 }
 
 .sub_title_1{
@@ -128,12 +125,15 @@ body{
 .landmarks{
     display: flex;
     height: 85vh;
+    background-color: $secondary;
     background-position: top;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+    border-radius: 5rem;
     @include phone{
         flex-direction: row;
+        border-radius: 10rem;
     }
     @include tablet{
         flex-direction: column;
@@ -147,7 +147,7 @@ body{
 
 /*resize images into 200 x 400*/
 
-#rotating_one{
+#landmark_one{
     background-image: url(../../img/ashgabat-palace.jpg);
     background-size: cover;
     height: 15rem;
@@ -166,7 +166,7 @@ body{
     }
 }
 
-#rotating_two{
+#landmark_two{
     background-image: url(../../img/independ_monument.jpg);
     background-size: cover;
     height: 15rem;
@@ -185,7 +185,7 @@ body{
     }
 }
 
-#rotating_three{
+#landmark_three{
     background-image: url(../../img/doortohell.jpg);
     background-size: cover;
     height: 15rem;
@@ -204,10 +204,44 @@ body{
     }
 }
 
-/*.2nd_block{
+.2nd_block{
+    display: flex; 
+}
+
+.holder2{
+    display: flex;
+    height: 85vh;
     background-color: $secondary;
+    flex-direction: row;
+    align-items: center;
     border-radius: 5rem;
+    height: 85vh;
+    justify-content: space-around;
     @include phone{
         border-radius: 10rem;
     }
-}*/
+}
+
+.directions{
+    display: flex;
+    // height: 10rem;
+    // width: 10rem;
+    // background-color: $secondary-light;
+    position: relative;
+    perspective: 150rem;
+}
+
+.hotels{
+    display: flex;
+    // height: 10rem;
+    // width: 10rem;
+    // background-color: $secondary-light;
+    position: relative;
+    perspective: 150rem;
+}
+
+.card-side{
+    height: 10rem;
+    width: 10rem;
+    background-color: $secondary-light;
+}

@@ -118,13 +118,6 @@ body {
 
 .1st_block {
   background-color: #1e793a;
-  border-radius: 5rem;
-}
-
-@media (min-width: 400px) {
-  .1st_block {
-    border-radius: 10rem;
-  }
 }
 
 .sub_title_1 {
@@ -174,6 +167,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 85vh;
+  background-color: #1e793a;
   background-position: top;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -185,6 +179,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-radius: 5rem;
 }
 
 @media (min-width: 400px) {
@@ -193,6 +188,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    border-radius: 10rem;
   }
 }
 
@@ -217,7 +213,7 @@ body {
 }
 
 /*resize images into 200 x 400*/
-#rotating_one {
+#landmark_one {
   background-image: url(../../img/ashgabat-palace.jpg);
   background-size: cover;
   height: 15rem;
@@ -225,27 +221,27 @@ body {
 }
 
 @media (min-width: 400px) {
-  #rotating_one {
+  #landmark_one {
     height: 15rem;
     width: 33rem;
   }
 }
 
 @media (min-width: 600px) {
-  #rotating_one {
+  #landmark_one {
     height: 20rem;
     width: 70rem;
   }
 }
 
 @media (min-width: 1100px) {
-  #rotating_one {
+  #landmark_one {
     height: 70rem;
     width: 40rem;
   }
 }
 
-#rotating_two {
+#landmark_two {
   background-image: url(../../img/independ_monument.jpg);
   background-size: cover;
   height: 15rem;
@@ -253,27 +249,27 @@ body {
 }
 
 @media (min-width: 400px) {
-  #rotating_two {
+  #landmark_two {
     height: 15rem;
     width: 33rem;
   }
 }
 
 @media (min-width: 600px) {
-  #rotating_two {
+  #landmark_two {
     height: 20rem;
     width: 70rem;
   }
 }
 
 @media (min-width: 1100px) {
-  #rotating_two {
+  #landmark_two {
     height: 70rem;
     width: 40rem;
   }
 }
 
-#rotating_three {
+#landmark_three {
   background-image: url(../../img/doortohell.jpg);
   background-size: cover;
   height: 15rem;
@@ -281,31 +277,78 @@ body {
 }
 
 @media (min-width: 400px) {
-  #rotating_three {
+  #landmark_three {
     height: 15rem;
     width: 33rem;
   }
 }
 
 @media (min-width: 600px) {
-  #rotating_three {
+  #landmark_three {
     height: 20rem;
     width: 70rem;
   }
 }
 
 @media (min-width: 1100px) {
-  #rotating_three {
+  #landmark_three {
     height: 70rem;
     width: 40rem;
   }
 }
 
-/*.2nd_block{
-    background-color: $secondary;
-    border-radius: 5rem;
-    @include phone{
-        border-radius: 10rem;
-    }
-}*/
+.2nd_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.holder2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 85vh;
+  background-color: #1e793a;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5rem;
+  height: 85vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (min-width: 400px) {
+  .holder2 {
+    border-radius: 10rem;
+  }
+}
+
+.directions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
+}
+
+.hotels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
+}
+
+.card-side {
+  height: 10rem;
+  width: 10rem;
+  background-color: #9beba5;
+}
 /*# sourceMappingURL=style.css.map */
