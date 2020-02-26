@@ -370,14 +370,14 @@ body {
   position: relative;
   -webkit-perspective: 150rem;
           perspective: 150rem;
-  height: 15rem;
+  height: 20rem;
   width: 30rem;
 }
 
 @media (min-width: 600px) {
   .directions {
-    height: 40rem;
-    width: 30rem;
+    height: 33rem;
+    width: 47rem;
   }
 }
 
@@ -395,14 +395,14 @@ body {
   -webkit-perspective: 150rem;
           perspective: 150rem;
   position: relative;
-  height: 13rem;
+  height: 20rem;
   width: 30rem;
 }
 
 @media (min-width: 600px) {
   .hotels {
-    height: 40rem;
-    width: 30rem;
+    height: 33rem;
+    width: 47rem;
   }
 }
 
@@ -420,21 +420,24 @@ body {
   background-color: #9beba5;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  height: 20rem;
+  width: 30rem;
+  font-size: 1rem;
 }
 
 @media (min-width: 400px) {
   .card-side {
-    height: 30rem;
+    height: 20rem;
     width: 30rem;
-    font-size: .75rem;
+    font-size: 1rem;
   }
 }
 
 @media (min-width: 600px) {
   .card-side {
-    height: 40rem;
-    width: 30rem;
-    font-size: 1.5rem;
+    height: 33rem;
+    width: 47rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -472,7 +475,7 @@ body {
           transform: rotateY(-180deg);
   -webkit-transition: all 1s;
   transition: all 1s;
-  background-image: url(../../img/ashgabat_map.PNG);
+  background-image: url(../../img/ashgabat_flights.PNG);
   background-size: cover;
 }
 
