@@ -127,7 +127,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 1rem;
+  height: 0rem;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -155,13 +155,13 @@ body {
 
 @media (min-width: 600px) {
   .second_title {
-    font-size: 6rem;
+    font-size: 6.8rem;
   }
 }
 
 @media (min-width: 1100px) {
   .second_title {
-    font-size: 6rem;
+    font-size: 7rem;
   }
 }
 
@@ -171,7 +171,7 @@ body {
   display: flex;
   background-color: #1e793a;
   border-radius: 5rem;
-  height: 85vh;
+  height: 100vh;
   background-color: #1e793a;
   background-position: top;
   -webkit-box-align: center;
@@ -214,8 +214,23 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 85vh;
+    height: 100vh;
   }
+}
+
+.landmarks_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.landmarks_1:hover {
+  -webkit-filter: contrast(200%);
+          filter: contrast(200%);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 /*resize images into 200 x 400*/
@@ -315,7 +330,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 5rem;
-  height: 85vh;
+  height: 100vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   display: -webkit-box;
@@ -445,7 +460,7 @@ body {
   .card-side {
     height: 60rem;
     width: 60rem;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -539,8 +554,30 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 5rem;
-  height: 85vh;
+  height: 100vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.blurb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #9beba5;
+  height: 80rem;
+  width: 100rem;
+  border-radius: 5rem;
+}
+
+.overlayed_pics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80rem;
+  width: 80rem;
 }
 /*# sourceMappingURL=style.css.map */
