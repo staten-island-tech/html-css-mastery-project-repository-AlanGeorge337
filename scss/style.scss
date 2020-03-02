@@ -389,4 +389,85 @@ body{
     display: flex;
     height: 80rem;
     width: 80rem;
+    position: relative;
+    margin: 2rem;
+}
+
+.pics{
+    position: absolute;
+    transition: all 0.3s;
+    outline-offset: 1rem;
+    @include phone{
+
+    }
+
+    @include tablet{
+        height: 20rem;
+    }
+
+    @include desktop{
+       height: 30rem; 
+    }
+}
+
+.turk_canyon{
+    top: 15rem;
+    left: 35%;
+    @include phone{
+
+    }
+
+    @include tablet{
+        top: 16rem;
+        left: 12%;
+    }
+}
+
+.museum{
+    top: 35rem;
+    right: 30%;
+    @include phone{
+
+    }
+
+    @include tablet{
+        top: 33rem;
+        right: 0%;        
+    }
+}
+
+.neutrality_monument{
+    top: -2rem;
+    left: 0;
+    @include phone{
+
+    }
+
+    @include tablet{
+        top: -2rem;
+        left: 0;
+    }
+}
+
+.mausoleum{
+    top: 55rem;
+    right: 5%;
+    @include phone{
+
+    }
+
+    @include tablet{
+        top: 51rem;
+        right: -3%;
+    }
+}
+
+.pics:hover{
+    transform: scale(1.3);
+    outline: 1rem solid $primary;
+}
+
+.overlayed_pics:hover .pics:not(:hover){
+    transform: scale(0.8);
+    opacity: 0.5;
 }
