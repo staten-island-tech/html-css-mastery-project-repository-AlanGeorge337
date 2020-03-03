@@ -371,10 +371,13 @@ body{
     display: flex;
     background-color: $secondary;
     align-items: center;
-    border-radius: 5rem;
+    border-radius: 2rem;
     height: 100vh;
     justify-content: space-around;
     flex-direction: row;
+    @include phone{
+        border-radius: 5rem;
+    }
 }
 
 .blurb{
@@ -383,6 +386,18 @@ body{
     height: 80rem;
     width: 100rem;
     border-radius: 5rem;
+    color: $primary;
+    font-size: 1.5rem;
+    align-items: center;
+    text-align: center;
+    @include phone{
+        border-radius: 10rem;
+        font-size: 2rem;
+    }
+
+    @include tablet{
+        border-radius: 5rem;
+    }
 }
 
 .overlayed_pics{
@@ -397,8 +412,9 @@ body{
     position: absolute;
     transition: all 0.3s;
     outline-offset: 1rem;
+    height: 10rem;
     @include phone{
-
+        height: 10rem;
     }
 
     @include tablet{
@@ -411,54 +427,74 @@ body{
 }
 
 .turk_canyon{
-    top: 15rem;
-    left: 35%;
+    top:20rem;
+    left: -5%;
     @include phone{
-
+        top:20rem;
+        left: -5%;
     }
 
     @include tablet{
         top: 16rem;
         left: 12%;
     }
+    @include desktop{
+        top: 15rem;
+        left: 35%;
+    }
 }
 
 .museum{
-    top: 35rem;
-    right: 30%;
+    top: 37rem;
+    right: -8%;
     @include phone{
-
+        top: 37rem;
+        right: -8%;
     }
 
     @include tablet{
         top: 33rem;
         right: 0%;        
     }
+    @include desktop{
+        top: 35rem;
+        right: 30%;  
+    }
 }
 
 .neutrality_monument{
-    top: -2rem;
-    left: 0;
+    top: 3rem;
+    left: -5%;
     @include phone{
-
+        top: 3rem;
+        left: -5%;
     }
 
     @include tablet{
         top: -2rem;
         left: 0;
     }
+    @include desktop{
+        top: -2rem;
+        left: 0; 
+    }
 }
 
 .mausoleum{
     top: 55rem;
-    right: 5%;
+    right: 5%;;
     @include phone{
-
+        top: 55rem;
+        right: 5%;
     }
 
     @include tablet{
         top: 51rem;
         right: -3%;
+    }
+    @include desktop{
+        top: 55rem;
+        right: 5%; 
     }
 }
 
