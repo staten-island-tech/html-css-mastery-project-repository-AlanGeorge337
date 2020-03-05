@@ -227,8 +227,8 @@ body {
 }
 
 .landmarks_1:hover {
-  -webkit-filter: contrast(200%);
-          filter: contrast(200%);
+  -webkit-filter: brightness(200%);
+          filter: brightness(200%);
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -588,13 +588,20 @@ body {
 @media (min-width: 400px) {
   .blurb {
     border-radius: 10rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
 @media (min-width: 600px) {
   .blurb {
     border-radius: 5rem;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .blurb {
+    font-size: 2.6rem;
   }
 }
 

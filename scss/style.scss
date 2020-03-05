@@ -155,7 +155,7 @@ body{
 }
 
 .landmarks_1:hover{
-    filter: contrast(200%);
+    filter: brightness(200%);
     transform: scale(1.2);
 }
 
@@ -392,11 +392,16 @@ body{
     text-align: center;
     @include phone{
         border-radius: 10rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     @include tablet{
         border-radius: 5rem;
+        font-size: 2rem;
+    }
+
+    @include desktop{
+        font-size: 2.6rem;
     }
 }
 
@@ -482,7 +487,7 @@ body{
 
 .mausoleum{
     top: 55rem;
-    right: 5%;;
+    right: 5%;
     @include phone{
         top: 55rem;
         right: 5%;
