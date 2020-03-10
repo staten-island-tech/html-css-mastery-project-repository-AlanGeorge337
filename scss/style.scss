@@ -512,3 +512,33 @@ body{
     transform: scale(0.8);
     opacity: 0.5;
 }
+
+.footer{
+    display: flex;
+    background-color: $secondary;
+    align-items: center;
+    border-radius: 5rem;
+    height: 20vh;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.foothov{
+    display: flex;
+    height: 10rem;
+    width: 10rem;
+    filter: contrast(200%);
+    
+}
+
+.twitter{
+ 
+}
+
+.instagram{
+
+}
+
+.wiki{
+
+}
