@@ -785,15 +785,15 @@ body {
 
 @media (min-width: 400px) {
   .foothov {
-    height: 10rem;
-    width: 10rem;
+    height: 5rem;
+    width: 5rem;
   }
 }
 
 @media (min-width: 1100px) {
   .foothov {
-    height: 5rem;
-    width: 5rem;
+    height: 10rem;
+    width: 10rem;
   }
 }
 
@@ -801,11 +801,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 5rem;
-  width: 5rem;
 }
 
 @media (min-width: 400px) {
+  .link_dimen {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+@media (min-width: 1100px) {
   .link_dimen {
     height: 10rem;
     width: 10rem;

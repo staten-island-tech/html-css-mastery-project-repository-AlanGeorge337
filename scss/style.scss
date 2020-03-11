@@ -528,22 +528,25 @@ body{
 
     filter: contrast(200%);
     @include phone{
-        height: 10rem;
-        width: 10rem;
+        height: 5rem;
+        width: 5rem;
     }
 
     @include desktop{
-        height: 5rem;
-        width: 5rem;
+        height: 10rem;
+        width: 10rem;
     }
     
 }
 
 .link_dimen{
     display: flex;
-    height: 5rem;
-    width: 5rem;
+
     @include phone{
+        height: 5rem;
+        width: 5rem;
+    }
+    @include desktop{
         height: 10rem;
         width: 10rem;
     }
