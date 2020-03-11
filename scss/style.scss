@@ -525,20 +525,26 @@ body{
 
 .foothov{
     display: flex;
-    height: 10rem;
-    width: 10rem;
+
     filter: contrast(200%);
+    @include phone{
+        height: 10rem;
+        width: 10rem;
+    }
+
+    @include desktop{
+        height: 5rem;
+        width: 5rem;
+    }
     
 }
 
-.twitter{
- 
-}
-
-.instagram{
-
-}
-
-.wiki{
-
+.link_dimen{
+    display: flex;
+    height: 5rem;
+    width: 5rem;
+    @include phone{
+        height: 10rem;
+        width: 10rem;
+    }
 }
