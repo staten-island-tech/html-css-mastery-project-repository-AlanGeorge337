@@ -52,11 +52,9 @@ body{
 }
 
 .main_title_1{
-    height: 7rem;
-    font-size: 4rem;
     @include phone{
-        height: 6rem;
-        font-size: 19rem;
+        height: 10rem;
+        font-size: 4.5rem;
     }
     @include tablet{
         height: 15rem;
@@ -66,10 +64,7 @@ body{
         height: 9rem;
         font-size: 15rem; 
     }
-    /*@include laptop{
-        height: 7rem;
-        font-size: 7rem;
-    }*/
+    
 }
 
 .sub_title{
@@ -106,12 +101,11 @@ body{
 .second_title{
     display: flex;
     height: 10rem;
-    font-size: 4rem;
     color: $primary;
     text-align: center;
     justify-content: center;
     @include phone{
-        font-size: 6rem;        
+        font-size: 4rem;        
     }
     @include tablet{
         font-size: 6.8rem;
@@ -126,15 +120,12 @@ body{
     background-color: $secondary;
     border-radius: 5rem;
     height: 100vh;
-    background-color: $secondary;
     background-position: top;
     align-items: center;
     justify-content: space-evenly;
-    flex-direction: column;
-    border-radius: 5rem;
     @include phone{
-        flex-direction: row;
-        border-radius: 10rem;
+        flex-direction: column;
+        border-radius: 4rem;
     }
     @include tablet{
         flex-direction: column;
@@ -160,45 +151,60 @@ body{
 /*resize images into 200 x 400*/
 
 #landmark_one{
-    background-image: url(../../img/ashgabat-palace.jpg);
     background-size: cover;
-    height: 15rem;
-    width: 33rem;
+    @include phone{
+        background-image: url(../../img/ashgabat-palace-phone.jpg);
+        height: 15rem;
+        width: 33rem;
+    }
+
     @include tablet{
+        background-image: url(../../img/ashgabat-palace-ipad.jpg);
         height: 20rem;
         width: 70rem;
     }
     @include desktop{
+        background-image: url(../../img/ashgabat-palace.jpg);
         height: 70rem;
         width: 40rem;
     }
 }
 
 #landmark_two{
-    background-image: url(../../img/independ_monument.jpg);
     background-size: cover;
-    height: 15rem;
-    width: 33rem;
+    @include phone{
+        background-image: url(../../img/independ_monument-phone.jpg);
+        height: 15rem;
+        width: 33rem;
+    }
+
     @include tablet{
+        background-image: url(../../img/independ_monument-ipad.jpg);
         height: 20rem;
         width: 70rem;
     }
     @include desktop{
+        background-image: url(../../img/independ_monument.jpg);
         height: 70rem;
         width: 40rem;
     }
 }
 
 #landmark_three{
-    background-image: url(../../img/doortohell.jpg);
     background-size: cover;
-    height: 15rem;
-    width: 33rem;
+    @include phone{
+        background-image: url(../../img/doortohell-phone.jpg);
+        height: 15rem;
+        width: 33rem;
+    }
+
     @include tablet{
+        background-image: url(../../img/doortohell-ipad.jpg);
         height: 20rem;
         width: 70rem;
     }
     @include desktop{
+        background-image: url(../../img/doortohell.jpg);
         height: 70rem;
         width: 40rem;
     }
@@ -367,9 +373,7 @@ body{
     background-color: $secondary-light;
     height: 80rem;
     width: 100rem;
-    border-radius: 5rem;
     color: $primary;
-    font-size: 1.5rem;
     align-items: center;
     text-align: center;
     @include phone{
@@ -384,15 +388,30 @@ body{
 
     @include desktop{
         font-size: 2.6rem;
+        border-radius: 5rem;
     }
 }
 
 .overlayed_pics{
     display: flex;
-    height: 80rem;
-    width: 80rem;
     position: relative;
-    margin: 2rem;
+    @include phone{
+        height: 70rem;
+        width: 80rem;
+        margin: 1.5rem;
+    }
+    @include tablet{
+        height: 80rem;
+        width: 80rem;
+        margin: 4.5rem;
+    }
+    @include desktop{
+        height: 80rem;
+        width: 80rem;
+        margin: 2rem;
+    }
+    
+   
 }
 
 .pics{
@@ -542,10 +561,12 @@ body{
 }
 
 .nav_bar{
-    position: relative;
-    top: 3rem;
-    height: 10rem;
-    width: 35rem;
+    @include phone{
+        position: relative;
+        top: 2rem;
+        height: 13rem;
+        width: 39rem;
+    }
     @include tablet{
         height: 20rem;
         width: 75rem;
