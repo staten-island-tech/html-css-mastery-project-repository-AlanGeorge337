@@ -29,7 +29,7 @@ body{
         rgba(color(secondary), 0.5),
         rgba(color(primary), 0.5)
     ),
-    url(../../media/img/mosque.jpg);
+    url(../img/mosque.jpg);
     border-radius: 5rem; 
     background-position: top;
     background-size: cover;
@@ -153,18 +153,18 @@ body{
 #landmark_one{
     background-size: cover;
     @include phone{
-        background-image: url(../../media/img/ashgabat-palace-phone.jpg);
+        background-image: url(../img/ashgabat-palace-phone.jpg);
         height: 15rem;
         width: 33rem;
     }
 
     @include tablet{
-        background-image: url(../../media/img/ashgabat-palace-ipad.jpg);
+        background-image: url(../img/ashgabat-palace-ipad.jpg);
         height: 20rem;
         width: 70rem;
     }
     @include desktop{
-        background-image: url(../../media/img/ashgabat-palace.jpg);
+        background-image: url(../img/ashgabat-palace.jpg);
         height: 70rem;
         width: 40rem;
     }
@@ -173,18 +173,18 @@ body{
 #landmark_two{
     background-size: cover;
     @include phone{
-        background-image: url(../../media/img/independ_monument-phone.jpg);
+        background-image: url(../img/independ_monument-phone.jpg);
         height: 15rem;
         width: 33rem;
     }
 
     @include tablet{
-        background-image: url(../../media/img/independ_monument-ipad.jpg);
+        background-image: url(../img/independ_monument-ipad.jpg);
         height: 20rem;
         width: 70rem;
     }
     @include desktop{
-        background-image: url(../../media/img/independ_monument.jpg);
+        background-image: url(/img/independ_monument.jpg);
         height: 70rem;
         width: 40rem;
     }
@@ -193,18 +193,18 @@ body{
 #landmark_three{
     background-size: cover;
     @include phone{
-        background-image: url(../../media/img/doortohell-phone.jpg);
+        background-image: url(../img/doortohell-phone.jpg);
         height: 15rem;
         width: 33rem;
     }
 
     @include tablet{
-        background-image: url(../../media/img/doortohell-ipad.jpg);
+        background-image: url(../img/doortohell-ipad.jpg);
         height: 20rem;
         width: 70rem;
     }
     @include desktop{
-        background-image: url(../../media/img/doortohell.jpg);
+        background-image: url(../img/doortohell.jpg);
         height: 70rem;
         width: 40rem;
     }
@@ -312,7 +312,7 @@ body{
     z-index: 0;
     transform: rotateY(-180deg);
     transition: all 1s;
-    background-image: url(../../media/img/ashgabat_flights.PNG);
+    background-image: url(img/ashgabat_flights.PNG);
     background-size: cover;
 
 }
@@ -332,7 +332,7 @@ body{
     z-index: 0;
     transform: rotateY(-180deg);
     transition: all 1s;
-    background-image: url(../../media/img/ashgabat_hotels.PNG);
+    background-image: url(../img/ashgabat_hotels.PNG);
 }
 
 .directions:hover .card-side-front-1{
