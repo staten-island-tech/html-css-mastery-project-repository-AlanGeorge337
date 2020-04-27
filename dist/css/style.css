@@ -265,7 +265,7 @@ body {
 
 @media (min-width: 1100px) {
   #landmark_two {
-    background-image: url(/img/independ_monument.jpg);
+    background-image: url(../img/independ_monument.jpg);
     height: 70rem;
     width: 40rem;
   }
