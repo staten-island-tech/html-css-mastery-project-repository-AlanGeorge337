@@ -19,8 +19,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(30, 121, 58, 0.5)), to(rgba(255, 255, 255, 0.5))), url(../../img/mosque.jpg);
-  background-image: linear-gradient(to right bottom, rgba(30, 121, 58, 0.5), rgba(255, 255, 255, 0.5)), url(../../img/mosque.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(30, 121, 58, 0.5)), to(rgba(255, 255, 255, 0.5))), url(../../media/img/mosque.jpg);
+  background-image: linear-gradient(to right bottom, rgba(30, 121, 58, 0.5), rgba(255, 255, 255, 0.5)), url(../../media/img/mosque.jpg);
   border-radius: 5rem;
   background-position: top;
   background-size: cover;
@@ -221,7 +221,7 @@ body {
 
 @media (min-width: 375px) {
   #landmark_one {
-    background-image: url(../../img/ashgabat-palace-phone.jpg);
+    background-image: url(../../media/img/ashgabat-palace-phone.jpg);
     height: 15rem;
     width: 33rem;
   }
@@ -229,7 +229,7 @@ body {
 
 @media (min-width: 600px) {
   #landmark_one {
-    background-image: url(../../img/ashgabat-palace-ipad.jpg);
+    background-image: url(../../media/img/ashgabat-palace-ipad.jpg);
     height: 20rem;
     width: 70rem;
   }
@@ -237,7 +237,7 @@ body {
 
 @media (min-width: 1100px) {
   #landmark_one {
-    background-image: url(../../img/ashgabat-palace.jpg);
+    background-image: url(../../media/img/ashgabat-palace.jpg);
     height: 70rem;
     width: 40rem;
   }
@@ -249,7 +249,7 @@ body {
 
 @media (min-width: 375px) {
   #landmark_two {
-    background-image: url(../../img/independ_monument-phone.jpg);
+    background-image: url(../../media/img/independ_monument-phone.jpg);
     height: 15rem;
     width: 33rem;
   }
@@ -257,7 +257,7 @@ body {
 
 @media (min-width: 600px) {
   #landmark_two {
-    background-image: url(../../img/independ_monument-ipad.jpg);
+    background-image: url(../../media/img/independ_monument-ipad.jpg);
     height: 20rem;
     width: 70rem;
   }
@@ -265,7 +265,7 @@ body {
 
 @media (min-width: 1100px) {
   #landmark_two {
-    background-image: url(../../img/independ_monument.jpg);
+    background-image: url(../../media/img/independ_monument.jpg);
     height: 70rem;
     width: 40rem;
   }
@@ -277,7 +277,7 @@ body {
 
 @media (min-width: 375px) {
   #landmark_three {
-    background-image: url(../../img/doortohell-phone.jpg);
+    background-image: url(../../media/img/doortohell-phone.jpg);
     height: 15rem;
     width: 33rem;
   }
@@ -285,7 +285,7 @@ body {
 
 @media (min-width: 600px) {
   #landmark_three {
-    background-image: url(../../img/doortohell-ipad.jpg);
+    background-image: url(../../media/img/doortohell-ipad.jpg);
     height: 20rem;
     width: 70rem;
   }
@@ -293,7 +293,7 @@ body {
 
 @media (min-width: 1100px) {
   #landmark_three {
-    background-image: url(../../img/doortohell.jpg);
+    background-image: url(../../media/img/doortohell.jpg);
     height: 70rem;
     width: 40rem;
   }
@@ -463,7 +463,7 @@ body {
           transform: rotateY(-180deg);
   -webkit-transition: all 1s;
   transition: all 1s;
-  background-image: url(../../img/ashgabat_flights.PNG);
+  background-image: url(../../media/img/ashgabat_flights.PNG);
   background-size: cover;
 }
 
@@ -489,7 +489,7 @@ body {
           transform: rotateY(-180deg);
   -webkit-transition: all 1s;
   transition: all 1s;
-  background-image: url(../../img/ashgabat_hotels.PNG);
+  background-image: url(../../media/img/ashgabat_hotels.PNG);
 }
 
 .directions:hover .card-side-front-1 {
